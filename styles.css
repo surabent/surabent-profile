@@ -262,6 +262,16 @@ li {
   flex-direction: row;
   column-gap: 0.3rem;
 }
+#summary-and-currently .content,
+#exp .content {
+  margin-left: 2rem;
+}
+
+#exp .content-list {
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 @media screen and (max-width: 1082px) {
   .skill-card {
@@ -294,15 +304,34 @@ li {
 
 @media screen and (max-width: 425px) {
   body {
-    width: 100%;
-    max-width: 100%;
-    padding: 1rem 0px 0px 0px;
+    width: 100vw;
+    max-width: 95%;
+    padding: 1rem 0rem 1rem 0rem;
   }
   .tech-logos-list {
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     display: flex;
-    row-gap: 0.3rem;
+    row-gap: 0rem;
     flex-wrap: wrap;
+  }
+
+  #summary-and-currently .content,
+  #exp .content {
+    margin-left: 1.5rem;
+  }
+
+  #exp .content-list {
+    margin-left: 1rem;
+  }
+
+  #name-occupation.container {
+    align-items: center;
+    h3 {
+      text-align: center;
+    }
+    h6 {
+      text-align: center;
+    }
   }
 }
